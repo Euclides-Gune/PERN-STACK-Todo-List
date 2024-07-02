@@ -1,0 +1,280 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0%;
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right,white, gray, black);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    background-color: gray;
+    box-shadow: 1px 1px 2px white;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-flow: row wrap;
+    margin-top: 0%;
+    margin-right: 5%;
+}
+
+nav li {
+    padding: 20px 10px;
+}
+
+nav li a {
+    color: white;
+    text-decoration: none;
+}
+nav li a:hover {
+    color: black;
+}
+
+nav .first {
+    font-weight: bold;
+    font-size: 25px;
+    flex: 15%;
+}
+
+.container {
+    width: 50%;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+}
+
+.task-form {
+    padding: 20px;
+}
+
+#description {
+    border: 1px solid lightgrey;
+    padding: 10px;
+    width: 70%;
+}
+
+.task-btn {
+    width: 25%;
+    margin-left: 2%;
+    border: none;
+    padding: 10px;
+    background-color: rgb(49, 138, 216);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.tasks {
+    display: flex;
+    flex-flow: row wrap;
+    width: 91.5%;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 15px;
+    background-color: white;
+}
+
+.tasks .task {
+    padding: 10px;
+    color: black;
+    flex: 68%;
+}
+
+.tasks .check {
+    color: white;
+    border: none;
+    padding: 15px;
+    flex: 15%;
+    margin: 0% 1%;
+    background-color: rgb(65, 186, 65);
+    cursor: pointer;
+}
+
+.tasks .check:hover {
+    opacity: 0.7;
+}
+
+.tasks .remove {
+    color: white;
+    border: none;
+    padding: 15px;
+    flex: 15%;
+    background-color: red;
+    cursor: pointer;
+}
+
+.tasks .remove:hover {
+    opacity: 0.7;
+}
+
+.task-length {
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+}
+
+.completed-tasks {
+    text-align: center;
+    padding: 10px;
+    margin: 10px auto;
+    width: 50%;
+    color: white;
+    background-color: rgb(65, 186, 65);
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px green;
+}
+
+.uncompleted-tasks {
+    text-align: center;
+    padding: 10px;
+    margin: 10px auto;
+    width: 50%;
+    color: white;
+    background-color: red;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgb(145, 39, 39);
+}
+
+.completed-tasks:hover {
+    box-shadow: 3px 3px 5px rgb(63, 63, 255);
+}
+
+.login-form {
+    padding: 20px;
+    margin: 15% auto;
+    width: 50%;
+    height: 50%;
+    border: 1px solid white;
+}
+
+#name {
+    background-color: transparent;
+    margin: 20px 0px;
+    border: 0;
+    border-bottom: 2px solid white;
+    padding: 10px;
+    width: 100%;
+}
+
+#name:hover {
+    border: 0;
+    border-bottom: 2px solid white;
+}
+
+.login-btn {
+    border: 0;
+    width: 100%;
+    padding: 10px;
+    font-weight: bold;
+    color: gray;
+}
+
+.login-btn:hover {
+    color: white;
+    background-image: linear-gradient(to right, white, gray, black);
+}
+
+.sign-up-link h4 {
+    color: white;
+}
+
+.sign-up-link a {
+    color: white;
+    text-decoration: none
+}
+
+.sign-up-link a:hover {
+    text-decoration: underline;
+}
+
+.login-icon {
+    text-align: center;
+}
+
+.error {
+    color: red;
+}
+
+.success {
+    color: green;
+}
+
+footer {
+    margin-top: 10%;
+    position: relative;
+    padding: 40px;
+    width: 100%;
+    bottom: 0%;
+    background-image: linear-gradient(to right, gray, black);
+    color: white;
+}
+
+footer h3 {
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+    .login-form {
+        margin-top: 60%;
+        width: 90%;
+    }
+
+    nav ul {
+        flex-flow: column wrap;
+    }
+
+    nav ul li {
+        width: 100%;
+    }
+
+    nav ul li:hover {
+        color: black;
+        background-color: white;
+    }
+
+    .container {
+        width: 80%;
+    }
+
+    .tasks {
+        flex-flow: column wrap;
+    }
+
+    .tasks .check {
+        margin-bottom: 5px;
+    }
+
+    .completed-tasks {
+        width: 80%;
+    }
+
+    .uncompleted-tasks {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 920px) {
+    .tasks {
+        flex-flow: column wrap;
+    }
+
+    .tasks .check {
+        margin-bottom: 5px;
+    }
+}
