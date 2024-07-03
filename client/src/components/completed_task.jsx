@@ -1,11 +1,13 @@
 import React, {useState, useEffect, Fragment} from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useLocation } from "react-router-dom";
 import axios from "axios";
 
 const CompletedTask = () => {
 
     const { id } = useParams();
-    const [tasks, setTasks] = useState(["Brush the teeth", "Take a bath"]);
+    const location = useLocation();
+    console.log(location);
+    const [tasks, setTasks] = useState([]);
  
     useEffect(() => {
         const take = [];

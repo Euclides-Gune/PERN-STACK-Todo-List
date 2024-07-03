@@ -74,6 +74,7 @@ const Body = () => {
                                 headers: {'Content-Type': 'application/json'}
                             });
                             console.log(result.data);
+                            alert("Added to 'Completed Tasks'");
                         } catch (error) {
                             console.log(error);
                         }

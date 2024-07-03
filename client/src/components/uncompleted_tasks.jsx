@@ -5,7 +5,7 @@ import axios from "axios";
 const UncompletedTasks = () => {
 
     const { id } = useParams();
-    const [tasks, setTasks] = useState(["Brush the teeth", "Take a bath"]);
+    const [tasks, setTasks] = useState([]);
  
     useEffect(() => {
         const take = [];
@@ -30,7 +30,7 @@ const UncompletedTasks = () => {
                 <li><a href={`/tasks/uncompleted/${id}`}>Uncompleted Tasks</a></li>
                 </ul>
             </nav>
-            <h1 className="task-length">Completed Tasks: {tasks.length}</h1>
+            <h1 className="task-length">Uncompleted Tasks: {tasks.length}</h1>
             {tasks.map(task => (
                 <div className="uncompleted-tasks">
                     <p>{task.description}</p>

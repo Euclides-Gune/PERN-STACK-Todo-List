@@ -115,6 +115,7 @@ nav .first {
 }
 
 .task-length {
+    margin: 10% 0px;
     text-align: center;
     color: white;
     text-shadow: 2px 2px 4px black;
